@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="610.0" style="-fx-background-color: white;" stylesheets="@btnHighlight.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlib.FXMLOneController">
+   <children>
+      <ImageView fx:id="happyImage" fitHeight="141.0" fitWidth="186.0" layoutX="28.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@happy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="drawImage" fitHeight="141.0" fitWidth="187.0" layoutX="28.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@neutral.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gameOver" fitHeight="147.0" fitWidth="193.0" layoutX="25.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sad.png" />
+         </image>
+      </ImageView>
+      <Line endX="508.0" endY="-3.0517578125E-5" layoutX="102.0" layoutY="350.0" smooth="false" startX="-100.0" stroke="#88e439" strokeWidth="5.0" />
+      <GridPane layoutX="25.0" layoutY="81.0" prefHeight="238.0" prefWidth="299.0" style="-fx-border-color: green;" stylesheets="@btnHighlight.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="101.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="100.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn0_0" defaultButton="true" mnemonicParsing="false" onAction="#btnHighlight" prefHeight="94.0" prefWidth="121.0" styleClass="Button" stylesheets="@btnHighlight.css" />
+            <Button fx:id="btn1_0" mnemonicParsing="false" onAction="#btnHighlight3" prefHeight="92.0" prefWidth="121.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.rowIndex="1" />
+            <Button fx:id="btn2_0" mnemonicParsing="false" onAction="#btnHighlight6" prefHeight="88.0" prefWidth="124.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.rowIndex="2" />
+            <Button fx:id="btn0_1" mnemonicParsing="false" onAction="#btnHighlight1" prefHeight="85.0" prefWidth="121.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.columnIndex="1" />
+            <Button fx:id="btn0_2" mnemonicParsing="false" onAction="#btnHighlight2" prefHeight="100.0" prefWidth="100.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.columnIndex="2" />
+            <Button fx:id="btn1_1" mnemonicParsing="false" onAction="#btnHighlight4" prefHeight="102.0" prefWidth="126.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn2_1" mnemonicParsing="false" onAction="#btnHighlight7" prefHeight="88.0" prefWidth="112.0" styleClass="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn1_2" mnemonicParsing="false" onAction="#btnHighlight5" prefHeight="100.0" prefWidth="100.0" styleClass="Button" stylesheets="@btnHighlight.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Button fx:id="btn2_2" mnemonicParsing="false" onAction="#btnHighlight8" prefHeight="86.0" prefWidth="116.0" styleClass="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text layoutX="240.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" textAlignment="CENTER" wrappingWidth="167.7366943359375">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9647058844566345" green="0.43921568989753723" blue="0.20000000298023224" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8117647171020508" green="0.26274511218070984" blue="0.3450980484485626" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Mistral" size="51.0" />
+         </font>
+      </Text>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="431.0" layoutY="101.0" prefHeight="38.0" prefWidth="118.0" style="-fx-border-color: #88e439; -fx-background-radius: 5em; -fx-border-radius: 5em;" textAlignment="CENTER" textFill="#f67033">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="timeLabel" alignment="CENTER" layoutX="448.0" layoutY="231.0" prefHeight="64.0" prefWidth="78.0" style="-fx-border-color: #88e439; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="$FXMLSettingController.str" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8842105269432068" green="0.10152047127485275" blue="0.3232826590538025" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.4198148250579834" blue="0.10740740597248077" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Text fill="#88e439" layoutX="464.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS." wrappingWidth="58.40000000000009">
+         <font>
+            <Font name="MV Boli" size="28.0" />
+         </font></Text>
+      <Label alignment="CENTER" layoutX="431.0" layoutY="168.0" prefHeight="38.0" prefWidth="118.0" style="-fx-border-color: #88e439; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="The Computer" textAlignment="CENTER" textFill="#cf4358">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Text fx:id="StateLabel" fill="#f67033" layoutX="271.0" layoutY="407.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="299.20000000000005">
+         <font>
+            <Font name="MV Boli" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnInvisable" layoutX="271.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnRestart" prefHeight="38.0" prefWidth="78.0" style="-fx-background-color: linear-gradient(#cf4358,#f67033); -fx-background-radius: 5em;" text="Restart" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="447.0" layoutY="300.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="38.0" prefWidth="85.0" style="-fx-background-color: #cf4358ed; -fx-background-radius: 5em;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
