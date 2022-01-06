@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="610.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="newlib.FXMLAllStartController">
+   <children>
+      <AnchorPane prefHeight="533.0" prefWidth="306.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="#ff8400" layoutX="136.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac" wrappingWidth="183.19999999999993">
+               <font>
+                  <Font name="System Bold Italic" size="46.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="aMode" layoutX="45.0" layoutY="330.0" mnemonicParsing="false" onAction="#adultM" text="Adult Mode" textFill="#ff8400">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Mode" />
+               </toggleGroup>
+            </RadioButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dddd.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="304.0" layoutY="-1.0" prefHeight="534.0" prefWidth="306.0" style="-fx-background-color: linear-gradient(#f67033,#cf4358);">
+         <children>
+            <Text fill="WHITE" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toe Game" wrappingWidth="223.20002441406245">
+               <font>
+                  <Font name="MV Boli" size="43.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="cMode" layoutX="53.0" layoutY="329.0" mnemonicParsing="false" onAction="#childMode" text="Child Mode" textFill="WHITE" toggleGroup="$Mode">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </RadioButton>
+            <ImageView fitHeight="140.0" fitWidth="133.0" layoutX="87.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@o.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
