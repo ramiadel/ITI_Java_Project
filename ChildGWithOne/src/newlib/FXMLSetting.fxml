@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="610.0" style="-fx-background-color: linear-gradient(#f67033,#cf4358);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlib.FXMLSettingController">
+   <children>
+      <ImageView fx:id="myImage" fitHeight="474.0" fitWidth="594.0" layoutX="74.0" layoutY="26.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@setting-line.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="45.0" text="Setting" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ofRadio" layoutX="397.0" layoutY="195.0" mnemonicParsing="false" onAction="#soundOf" prefHeight="26.0" prefWidth="70.0" style="-fx-border-radius: 5em; -fx-border-color: red;" text="OFF" textFill="#d41b1b">
+         <toggleGroup>
+            <ToggleGroup fx:id="soundToggle" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="onRadio" layoutX="397.0" layoutY="165.0" mnemonicParsing="false" onAction="#soundOn" prefHeight="27.0" prefWidth="70.0" selected="true" style="-fx-border-color: green; -fx-border-radius: 5em;" text="ON" textFill="#18d418" toggleGroup="$soundToggle">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <Label layoutX="187.0" layoutY="165.0" text="Sound" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="25.0" />
+         </font></Label>
+      <Button layoutX="277.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="27.0" prefWidth="56.0" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="Back">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9647058844566345" green="0.43921568989753723" blue="0.20000000298023224" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8117647171020508" green="0.2666666805744171" blue="0.3490196168422699" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutBtn" layoutX="271.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnAbout" style="-fx-background-color: white; -fx-background-radius: 5em;" text="About">
+         <font>
+            <Font name="MV Boli" size="19.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9647058844566345" green="0.43921568989753723" blue="0.20000000298023224" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8117647171020508" green="0.2666666805744171" blue="0.3490196168422699" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Text fx:id="aboutTxt" fill="WHITE" layoutX="210.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITI Embedded Systems Area 51&#10;Java course project&#10;Tic Tac Toe&#10;Team members:&#10;Rami adel&#10;Mohamed hasan&#10;Mahmoud elembabi&#10;Wesam Mahgoub&#10;Yasmin Tarek&#10;Yasser Hesham" textAlignment="CENTER" visible="false" wrappingWidth="201.33673095703125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
