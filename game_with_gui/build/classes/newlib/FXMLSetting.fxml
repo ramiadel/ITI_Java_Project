@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(#f67033,#cf4358);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlib.FXMLSettingController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="400.0" layoutY="25.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@setting-line.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="25.0" text="Setting" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="45.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ofRadio" layoutX="279.0" layoutY="161.0" mnemonicParsing="false" onAction="#soundOf" style="-fx-border-radius: 5em; -fx-border-color: red;" text="OFF" textFill="#d41b1b">
+         <toggleGroup>
+            <ToggleGroup fx:id="soundToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="onRadio" layoutX="279.0" layoutY="139.0" mnemonicParsing="false" onAction="#soundOn" selected="true" style="-fx-border-color: green; -fx-border-radius: 5em;" text="ON" textFill="#18d418" toggleGroup="$soundToggle" />
+      <Label layoutX="87.0" layoutY="136.0" text="Sound" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="25.0" />
+         </font></Label>
+      <Button layoutX="174.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnBack" style="-fx-border-radius: 5em; -fx-background-radius: 5em;" text="back">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9647058844566345" green="0.43921568989753723" blue="0.20000000298023224" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8117647171020508" green="0.2666666805744171" blue="0.3490196168422699" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="87.0" layoutY="224.0" text="Level" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="283.0" layoutY="225.0" mnemonicParsing="false" selected="true" text="Easy">
+         <toggleGroup>
+            <ToggleGroup fx:id="levelGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="283.0" layoutY="246.0" mnemonicParsing="false" text="HARD" toggleGroup="$levelGroup">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+   </children>
+</AnchorPane>
