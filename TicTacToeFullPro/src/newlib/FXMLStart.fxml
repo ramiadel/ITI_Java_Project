@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="610.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newlib.FXMLStartController">
+   <children>
+      <Label focusTraversable="false" layoutX="231.0" layoutY="401.0" text="click any where!">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9052631855010986" green="0.50694739818573" blue="0.020116958767175674" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8842105269432068" green="0.27508771419525146" blue="0.27508771419525146" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Text fontSmoothingType="LCD" layoutX="208.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" textAlignment="CENTER" wrappingWidth="194.14239501953125">
+         <font>
+            <Font name="Mistral" size="53.0" />
+         </font>
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5113636435884418" focusAngle="-98.97" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.95686274766922" green="0.30588236451148987" blue="0.4000000059604645" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9647058844566345" green="0.43921568989753723" blue="0.20000000298023224" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </stroke>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9529411792755127" green="0.3019607961177826" blue="0.3960784375667572" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.95686274766922" green="0.45098039507865906" blue="0.18431372940540314" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#btnAnyWhere" prefHeight="526.0" prefWidth="610.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
